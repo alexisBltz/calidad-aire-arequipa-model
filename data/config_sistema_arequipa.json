@@ -1,0 +1,42 @@
+{
+  "proyecto": "Predicción Calidad del Aire - Arequipa",
+  "version": "1.0",
+  "ubicacion": "Socabaya, Arequipa",
+  "periodo_entrenamiento": "Diciembre 2021",
+  "contaminantes": [
+    "PM10",
+    "PM2.5"
+  ],
+  "unidades": "μg/m³",
+  "actualizacion": "horaria",
+  "rangos_clasificacion": {
+    "PM10": {
+      "Bueno": [
+        0,
+        50
+      ],
+      "Moderado": [
+        51,
+        100
+      ],
+      "Dañino": [
+        101,
+        167
+      ]
+    },
+    "PM2.5": {
+      "Bueno": [
+        0,
+        25
+      ],
+      "Moderado": [
+        26,
+        50
+      ],
+      "Dañino": [
+        51,
+        75
+      ]
+    }
+  }
+}

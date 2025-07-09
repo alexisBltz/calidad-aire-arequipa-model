@@ -1,0 +1,5 @@
+[
+  "hora", "día", "mes", "día_semana", "es_fin_semana",
+  "hora_sin", "hora_cos", "mes_sin", "mes_cos",
+  "TEMPERATURA", "HUMEDAD_RELATIVA", "PRESION_BAROMETRICA"
+]
