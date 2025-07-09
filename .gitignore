@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.ipynb_checkpoints/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Entornos virtuales
+.env/
+.venv/
+venv/
+ENV/
+
+# Archivos de configuración y logs
+*.log
+*.env
+
+# Archivos de datos grandes o temporales
+data/*.csv
+!data/config_sistema_arequipa.json
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Otros
+.DS_Store
+Thumbs.db
+
+# Modelos y resultados
+models/*.pkl
+notebooks/*.csv
+notebooks/*.json
