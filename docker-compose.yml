@@ -1,0 +1,23 @@
+services:
+  # API de Predicción
+  calidad-aire-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./src:/app/src
+    restart: unless-stopped
+    command: ["python", "api/app.py"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+volumes:
+  postgres_data:
